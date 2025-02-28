@@ -12,6 +12,7 @@ class User(models.Model):
     STATUS_CHOICES = [
         ('active', 'Active'),
         ('inactive', 'Inactive'),
+        ('suspended', 'Suspended'),
     ]
 
     docking_point = models.ForeignKey('DockingPoint', on_delete=models.SET_NULL, null=True, blank=True)

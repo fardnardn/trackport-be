@@ -4,7 +4,7 @@ from .models import User, Item, Shipment
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'  # Includes all fields
+        fields = '__all__'
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
